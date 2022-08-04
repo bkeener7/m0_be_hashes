@@ -144,7 +144,7 @@ email_messages = [
 {
   "subject_line" => "You're fired",
   "sender" => "bstanley@bcorp.com",
-  "recipient" => "intern@bcorp",
+  "recipient" => "intern@bcorp.com",
   "body" => "Just get out",
   "attachments" => "madface.jpeg"
 }
