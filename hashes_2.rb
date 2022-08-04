@@ -1,5 +1,8 @@
 # 1- Using the following Hash
 
+puts "States Exercise"
+puts ""
+
 states = {
   "Oregon" => "OR",
   "Alabama" => "AL",
@@ -9,12 +12,15 @@ states = {
 
 # Use the each method to iterate through it and print out a sentence stating each state name and abbreviation
 #
-#
-#
-
-
+states.each do |state, abbreviation|
+  puts "#{state}, #{abbreviation}"
+end
+puts ""
 # ======================================
 # 2- Using the following Hash
+
+puts "Birthday Exercise"
+puts ""
 
 birthdays = {
   "Cindy" => "June 10",
@@ -25,12 +31,17 @@ birthdays = {
 
 # Use the each method to iterate through it and print out a sentence stating each friends name and birthday
 #
-#
-#
+birthdays.each do |name, date|
+  puts "#{name} has their birthday on #{date}, don't forget!"
+end
+puts ""
 
 
 # ======================================
 # 3- Using the following Hash
+
+puts "Login Exercise"
+puts ""
 
 login_statuses = {
   "Cindy" => true,
@@ -41,5 +52,8 @@ login_statuses = {
 
 # Use the each method to iterate through it and print ONLY the names of friends who are "logged in"
 #
-#
-#
+login_statuses.each do |name, status|
+  if status == true
+    puts "#{name} is online."
+  end
+end
